@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Navegantes Port Logistics",
+    "address": "Av. Portuária, 500, Navegantes, SC",
+    "phone": "(47) 3342-1000",
+    "website": "https://example.com/port",
+    "image": "images/port-logo.webp",
+    "membership": 3,
+    "description": "Leading maritime logistics and container terminal operations."
+  },
+  {
+    "name": "AeroTech Maintenance",
+    "address": "Rua do Aeroporto, 120, Navegantes, SC",
+    "phone": "(47) 3342-2000",
+    "website": "https://example.com/aerotech",
+    "image": "images/aerotech-logo.webp",
+    "membership": 2,
+    "description": "Aircraft maintenance and specialized engineering services."
+  },
+  {
+    "name": "Costa Azul Supermarkets",
+    "address": "Av. Conselheiro João Gaya, 850, Navegantes, SC",
+    "phone": "(47) 3342-3000",
+    "website": "https://example.com/costaazul",
+    "image": "images/supermarket-logo.webp",
+    "membership": 1,
+    "description": "Local grocery chain providing fresh produce and daily goods."
+  },
+  {
+    "name": "Atlantic Hydraulic Services",
+    "address": "Rua Industrial, 45, Navegantes, SC",
+    "phone": "(47) 3342-4000",
+    "website": "https://example.com/hydraulics",
+    "image": "images/hydraulic-logo.webp",
+    "membership": 3,
+    "description": "Hydraulic pump repair, bench testing, and industrial equipment."
+  },
+  {
+    "name": "Pedra do Mirante Real Estate",
+    "address": "Av. Beira Mar, 1200, Navegantes, SC",
+    "phone": "(47) 3342-5000",
+    "website": "https://example.com/realestate",
+    "image": "images/realestate-logo.webp",
+    "membership": 2,
+    "description": "Beachfront property sales, rentals, and consulting."
+  },
+  {
+    "name": "Sabor do Mar Restaurant",
+    "address": "Av. Cirino Adolfo Cabral, 310, Navegantes, SC",
+    "phone": "(47) 3342-6000",
+    "website": "https://example.com/sabordomar",
+    "image": "images/restaurant-logo.webp",
+    "membership": 1,
+    "description": "Traditional seafood restaurant with ocean view."
+  },
+  {
+    "name": "Vanguard Web Solutions",
+    "address": "Rua Prefeito José Juvenal, 88, Navegantes, SC",
+    "phone": "(47) 3342-7000",
+    "website": "https://example.com/vanguard",
+    "image": "images/web-logo.webp",
+    "membership": 2,
+    "description": "Web development, UI/UX design, and digital marketing."
+  }
+]
