@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Navegantes Chamber of Commerce - Home | WDD 231</title>
+
+    <meta name="author" content="Gabriel Roberto da Silva">
+    <meta name="description" content="Welcome to Navegantes Chamber of Commerce. Connecting local businesses, promoting growth, and serving the Navegantes community.">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    
+    <meta property="og:title" content="Navegantes Chamber of Commerce - Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://gabrielrobertodasilva.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://gabrielrobertodasilva.github.io/wdd231/chamber/index.html">
+    <meta property="og:description" content="Empowering businesses in Navegantes, SC. Join us to grow your local network.">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+   
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    
+    
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/tsunami.svg" alt="Navegantes Chamber Logo" width="50" height="50">
+            <span>Navegantes Chamber of Commerce</span>
+        </div>
+        <button id="hamburger-btn" aria-label="Toggle Navigation Menu">
+            <span>&#9776;</span>
+            <span>&#10005;</span>
+        </button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-grid">
+        
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/porto-large.webp">
+                <img src="images/porto-small.webp" alt="Navegantes Harbor and Coastline" width="1200" height="600" loading="eager">
+            </picture>
+            <div class="hero-cta">
+                <h2>Empowering Local Growth & Innovation</h2>
+                <p>Connect with top businesses in Navegantes today.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        
+        <section class="card events-section">
+            <h2>Current Events</h2>
+            <div class="event-item">
+                <h3>Navegantes Business Summit 2026</h3>
+                <p><strong>Date:</strong> October 15, 2026 | 09:00 AM</p>
+                <p>Join local entrepreneurs for networking, keynotes, and regional trade panels.</p>
+            </div>
+            <div class="event-item">
+                <h3>Port & Logistics Workshop</h3>
+                <p><strong>Date:</strong> November 02, 2026 | 02:00 PM</p>
+
+                <p>Explore maritime trends with experts from Navegantes Port Logistics.</p>
+            </div>
+        </section>
+
+        
+        <section class="card weather-section">
+            <h2>Current Weather</h2>
+            <div id="current-weather">
+                <div class="weather-info">
+                    <img id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png" alt="" width="50" height="50">
+                    <span id="current-temp">--°C</span>
+                </div>
+                <p id="weather-desc">Loading weather...</p>
+            </div>
+
+            <h3>3-Day Forecast</h3>
+            <div id="weather-forecast" class="forecast-container">
+                
+            </div>
+        </section>
+
+        
+        <section class="spotlights-section">
+            <h2>Member Spotlights</h2>
+            <div id="spotlights-container" class="spotlight-cards">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Navegantes Chamber of Commerce</strong></p>
+            <p>Av. Prefeito Cirino Adolfo Cabral, 100 - Navegantes, SC</p>
+            <p>info@naveganteschamber.org | (47) 3349-0000</p>
+        </div>
+        <div class="footer-dev">
+            <p>&copy; <span id="currentyear"></span> Gabriel Roberto da Silva | WDD 231</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
