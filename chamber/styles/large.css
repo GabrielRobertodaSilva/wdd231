@@ -60,7 +60,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    /* Layout da Home em Grid no Desktop */
+    
     .home-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;

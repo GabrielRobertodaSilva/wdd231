@@ -192,7 +192,7 @@ footer {
     margin-top: 2rem;
 }
 
-/* --- HERO SECTION --- */
+
 .hero {
     position: relative;
     margin-bottom: 1.5rem;
@@ -212,7 +212,7 @@ footer {
     bottom: 10%;
     left: 5%;
     right: 5%;
-    background: rgba(0, 59, 70, 0.85); /* Usa a cor --primary-color com opacidade */
+    background: rgba(0, 59, 70, 0.85); 
     color: white;
     padding: 1.2rem;
     border-radius: 8px;
@@ -241,7 +241,7 @@ footer {
     background-color: #e6c200;
 }
 
-/* --- CARDS & SECTIONS --- */
+
 .card {
     background: var(--card-bg);
     border: 1px solid #ddd;
@@ -258,7 +258,7 @@ footer {
     margin-top: 0;
 }
 
-/* --- WEATHER --- */
+
 .weather-info {
     display: flex;
     align-items: center;
@@ -290,7 +290,7 @@ footer {
     flex: 1;
 }
 
-/* --- SPOTLIGHTS --- */
+
 .spotlight-cards {
     display: flex;
     flex-direction: column;
