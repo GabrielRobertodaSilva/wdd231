@@ -310,3 +310,8 @@ footer {
     height: auto;
     margin-bottom: 0.5rem;
 }
+
+.close-modal {
+  background-color: #c9302c;
+  color: #ffffff;
+}
