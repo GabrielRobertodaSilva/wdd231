@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoteSmart Brazil — WDD 231 Site Plan</title>
+  <meta name="description" content="Site Plan for VoteSmart Brazil - Digital Voting Helper for WDD 231">
+  <meta name="author" content="Gabriel Roberto da Silva">
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/site-plan.css">
+</head>
+<body>
+  <header>
+    <h1>VoteSmart Brazil</h1>
+    <h2>WDD 231 Individual Project Site Plan</h2>
+  </header>
+
+  <main>
+    
+    <section>
+      <h3>1. Site Name</h3>
+      <p><strong>VoteSmart Brazil — Digital Voting Helper (Colinha Eleitoral 2026)</strong></p>
+      <p>
+        Este nome reflete a missão da plataforma: ajudar os eleitores brasileiros a tomarem decisões informadas 
+        e organizarem as suas escolhas de voto de forma rápida, inteligente e acessível nas eleições de 2026.
+      </p>
+    </section>
+
+   
+    <section>
+      <h3>2. Site Purpose</h3>
+      <p>
+        O propósito do <strong>VoteSmart Brazil</strong> é simplificar o processo de votação nas eleições gerais brasileiras. 
+        A aplicação permite aos utilizadores pesquisar, filtrar e inspecionar candidatos registados para cinco cargos diferentes 
+        (Deputado Estadual, Deputado Federal, Senador, Governador e Presidente), guardar as suas preferências numa "colinha eleitoral" 
+        digital guardada localmente no navegador (<code>localStorage</code>) e consultar a ordem correta de votação na urna eletrónica.
+      </p>
+    </section>
+
+    
+    <section>
+      <h3>3. Scenarios (User Queries & Tasks)</h3>
+      <ul>
+        <li>Como posso, enquanto eleitor, pesquisar candidatos a Deputado Federal no meu estado e verificar os seus números oficiais e partido?</li>
+        <li>Como posso guardar os meus candidatos selecionados numa colinha eleitoral digital para que as escolhas continuem salvas mesmo se fechar o navegador?</li>
+        <li>Qual é a ordem oficial passo a passo de votação na urna eletrónica?</li>
+        <li>Como posso enviar feedback ou reportar um dado incorreto sobre algum candidato na plataforma?</li>
+      </ul>
+    </section>
+
+    
+    <section>
+      <h3>4. Color Scheme</h3>
+      <p>A paleta de cores reflete a identidade visual das eleições e da bandeira nacional brasileira, mantendo elevado contraste e acessibilidade:</p>
+      <div class="color-palette">
+        <div class="color-box primary">
+          <span>Primary Blue</span>
+          <small>#003399</small>
+        </div>
+        <div class="color-box secondary">
+          <span>Secondary Green</span>
+          <small>#008744</small>
+        </div>
+        <div class="color-box accent">
+          <span>Accent Yellow</span>
+          <small>#FFC72C</small>
+        </div>
+        <div class="color-box neutral-dark">
+          <span>Dark Text</span>
+          <small>#212529</small>
+        </div>
+        <div class="color-box neutral-light">
+          <span>Light Background</span>
+          <small>#F8F9FA</small>
+        </div>
+      </div>
+      <ul>
+        <li><strong>Primary Blue (#003399):</strong> Utilizado no cabeçalho, rodapé e títulos de secção principais.</li>
+        <li><strong>Secondary Green (#008744):</strong> Utilizado em botões de ação principal (guardar candidatos, submeter formulários) e destaques secundários.</li>
+        <li><strong>Accent Yellow (#FFC72C):</strong> Utilizado em badges, destaques da colinha e elementos ativos de navegação.</li>
+        <li><strong>Dark Text (#212529) & Light Background (#F8F9FA):</strong> Utilizados no corpo do texto e fundo de página para garantir excelente legibilidade.</li>
+      </ul>
+    </section>
+
+    
+    <section>
+      <h3>5. Typography</h3>
+      <ul>
+        <li><strong>Montserrat (Sans-Serif):</strong> Utilizada em todos os cabeçalhos (<code>h1</code>, <code>h2</code>, <code>h3</code>) para transmitir clareza, modernidade e impacto visual.</li>
+        <li><strong>Roboto (Sans-Serif):</strong> Utilizada no corpo de texto (<code>body</code>, parágrafos, listas e botões) para garantir legibilidade ideal em ecrãs móveis e desktop.</li>
+      </ul>
+    </section>
+
+    
+    <section>
+      <h3>6. Wireframes</h3>
+      <p>Esboço da estrutura responsiva para a página inicial (Home Page) em ecrãs pequenos (Mobile) e ecrãs grandes (Desktop):</p>
+
+      <div class="wireframe-container">
+        <div class="wireframe-card">
+          <h4>Small Viewport (Mobile)</h4>
+          <div class="wireframe-mockup mobile">
+            <div class="wf-header">[ Header / Logo / Hamburger Nav ]</div>
+            <div class="wf-hero">[ Search & Filter Candidates ]</div>
+            <div class="wf-content">[ Candidate Cards (Single Column) ]</div>
+            <div class="wf-sidebar">[ My Mini Colinha (Floating / Collapsed) ]</div>
+            <div class="wf-footer">[ Footer / Links ]</div>
+          </div>
+        </div>
+
+        <div class="wireframe-card">
+          <h4>Large Viewport (Desktop)</h4>
+          <div class="wireframe-mockup desktop">
+            <div class="wf-header">[ Header / Logo / Navigation Links ]</div>
+            <div class="wf-hero">[ Hero Banner: Search & Filter Controls ]</div>
+            <div class="wf-body-grid">
+              <div class="wf-main-content">[ Candidate Cards Grid (3 Columns) ]</div>
+              <div class="wf-sidebar-desk">[ Sticky Colinha Eleitoral Panel ]</div>
+            </div>
+            <div class="wf-footer">[ Footer / Copyright & Social ]</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> VoteSmart Brazil | Gabriel Roberto da Silva | WDD 231 Site Plan</p>
+  </footer>
+
+  <script>
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
