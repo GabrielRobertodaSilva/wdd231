@@ -100,7 +100,7 @@
 
 .discover-card img {
   width: 100%;
-  height: auto;
+  height: 100%;
   aspect-ratio: 3 / 2;
   display: block;
   object-fit: cover;
