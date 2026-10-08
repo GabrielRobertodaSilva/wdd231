@@ -38,7 +38,7 @@ export const itemsOfInterest = [
     title: "Central Beach",
     address: "Avenida Prefeito Cirino Adolfo Cabral- Navegantes - SC, CEP 88370-102",
     description: "Praia Central is the city's most traditional and accessible beach.",
-    image: "images/praia.webp",
+    image: "images/images.webp",
     alt: "Central Beach"
   },
   {
