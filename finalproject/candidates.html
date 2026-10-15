@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Candidates — VoteSmart Brazil</title>
+  <meta name="description" content="Search and filter candidates for President, Governor, Senator, and Deputies for the 2026 elections.">
+  <meta name="author" content="Gabriel Roberto da Silva">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <h1>VoteSmart Brazil</h1>  
+    </div>
+    <button id="hamburgerBtn" class="hamburger" aria-label="Abrir menu">&#9776;</button>
+    <nav id="navMenu" class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="candidates.html" class="active">Candidates</a>
+      <a href="guide.html">Voting Guide</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Explore Candidates</h2>
+    <div class="filter-container">
+      <input type="text" id="searchInput" placeholder="Search by name or number...">
+      <select id="positionFilter">
+        <option value="Todos">All Positions</option>
+        <option value="Presidente">President</option>
+        <option value="Governador">Governor</option>
+        <option value="Senador">Senator</option>
+        <option value="Deputado Federal">Federal Deputy</option>
+        <option value="Deputado Estadual">State/ District Deputy</option>
+      </select>
+    </div>
+
+    <div id="candidatesContainer" class="grid-candidates"></div>
+  </main>
+
+  
+  <dialog id="candidateModal">
+    <div id="modalContent"></div>
+    <button id="closeModalBtn" style="margin-top:1rem; padding:0.5rem 1rem;">Fechar</button>
+  </dialog>
+
+  <footer>
+    <p>&copy; 2026 VoteSmart Brazil — Gabriel Roberto da Silva | WDD 231 Final Project</p>
+  </footer>
+
+  <script type="module">
+    import { fetchCandidates, renderCandidateCard, openCandidateModal } from './scripts/candidates.js';
+    import { saveToColinha } from './scripts/storage.js';
+    import { renderColinhaDisplay } from './scripts/main.js';
+
+    let candidates = [];
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      candidates = await fetchCandidates();
+      displayCandidates(candidates);
+
+      const searchInput = document.querySelector('#searchInput');
+      const positionFilter = document.querySelector('#positionFilter');
+
+      const filterData = () => {
+        const query = searchInput.value.toLowerCase();
+        const pos = positionFilter.value;
+        const filtered = candidates.filter(c => {
+          const matchesQuery = c.name.toLowerCase().includes(query) || c.number.includes(query);
+          const matchesPos = (pos === 'Todos' || c.position === pos);
+          return matchesQuery && matchesPos;
+        });
+        displayCandidates(filtered);
+      };
+
+      searchInput.addEventListener('input', filterData);
+      positionFilter.addEventListener('change', filterData);
+
+      document.querySelector('#closeModalBtn').addEventListener('click', () => {
+        document.querySelector('#candidateModal').close();
+      });
+    });
+
+    function displayCandidates(list) {
+      const container = document.querySelector('#candidatesContainer');
+      if (list.length === 0) {
+        container.innerHTML = '<p>Nenhum candidato encontrado.</p>';
+        return;
+      }
+      container.innerHTML = list.map(c => renderCandidateCard(c)).join('');
+
+     
+      document.querySelectorAll('.btn-add').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const id = e.target.getAttribute('data-id');
+          const cand = candidates.find(item => item.id === id);
+          if (cand) {
+            saveToColinha(cand);
+            alert(`${cand.name}Added to your cheat sheet!`);
+          }
+        });
+      });
+
+      document.querySelectorAll('.btn-details').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const id = e.target.getAttribute('data-id');
+          const cand = candidates.find(item => item.id === id);
+          if (cand) openCandidateModal(cand);
+        });
+      });
+    }
+  </script>
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback — VoteSmart Brazil</title>
+  <meta name="description" content="Send your questions, suggestions, or corrections about candidates.">
+  <meta name="author" content="Gabriel Roberto da Silva">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <h1>VoteSmart Brazil</h1>
+    </div>
+    <button id="hamburgerBtn" class="hamburger" aria-label="Abrir menu">&#9776;</button>
+    <nav id="navMenu" class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="candidates.html">Candidates</a>
+      <a href="guide.html">Voting Guide</a>
+      <a href="feedback.html" class="active">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Feedback Form </h2>
+    <form action="thanks.html" method="get" style="display:flex; flex-direction:column; gap:1rem; max-width:500px; margin-top:1rem;">
+      <label>
+        Full Name:
+        <input type="text" name="fullName" required style="width:100%; padding:0.5rem; margin-top:0.25rem;">
+      </label>
+      <label>
+        E-mail:
+        <input type="email" name="email" required style="width:100%; padding:0.5rem; margin-top:0.25rem;">
+      </label>
+      <label>
+        Message or Suggestion:
+        <textarea name="message" rows="5" required style="width:100%; padding:0.5rem; margin-top:0.25rem;"></textarea>
+      </label>
+      <button type="submit" class="cta-btn" style="align-self:flex-start;">Send Feedback</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 VoteSmart Brazil — Gabriel Roberto da Silva | WDD 231 Final Project</p>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+[
+  {
+    "id": "c1",
+    "name": "Ana Ribeiro",
+    "position": "Presidente",
+    "number": "99",
+    "party": "PFA - Partido do Futuro Acadêmico",
+    "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&auto=format&fit=crop&q=80",
+    "bio": "Professora universitária com foco em políticas públicas e inovação.",
+    "proposals": "Investimento massivo em tecnologia e expansão de universidades públicas."
+  },
+  {
+    "id": "c2",
+    "name": "Bruno Tavares",
+    "position": "Presidente",
+    "number": "88",
+    "party": "PNB - Partido Nacional Brasileiro",
+    "photo": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&auto=format&fit=crop&q=80",
+    "bio": "Economista com experiência em gestão pública e comércio exterior.",
+    "proposals": "Simplificação tributária e incentivo ao empreendedorismo social."
+  },
+  {
+    "id": "c3",
+    "name": "Carla Mendes",
+    "position": "Governador",
+    "number": "77",
+    "party": "PVC - Partido Verde Ciudadão",
+    "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&auto=format&fit=crop&q=80",
+    "bio": "Engenheira ambiental e defensora do desenvolvimento sustentável.",
+    "proposals": "Transição para energia renovável e modernização da infraestrutura do estado."
+  },
+  {
+    "id": "c4",
+    "name": "Diego Ramos",
+    "position": "Governador",
+    "number": "66",
+    "party": "PSD - Partido Social Digital",
+    "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop&q=80",
+    "bio": "Empresário da área de tecnologia e especialista em cidades inteligentes.",
+    "proposals": "Digitalização total dos serviços públicos estaduais e transporte integrado."
+  },
+  {
+    "id": "c5",
+    "name": "Elisa Moura",
+    "position": "Senador",
+    "number": "555",
+    "party": "PNB - Partido Nacional Brasileiro",
+    "photo": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=300&auto=format&fit=crop&q=80",
+    "bio": "Advogada e ex-defensora pública municipal.",
+    "proposals": "Reforma do sistema judiciário e reforço no combate à corrupção."
+  },
+  {
+    "id": "c6",
+    "name": "Fabio Lins",
+    "position": "Senador",
+    "number": "444",
+    "party": "PVC - Partido Verde Ciudadão",
+    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&auto=format&fit=crop&q=80",
+    "bio": "Jornalista e pesquisador na área de recursos hídricos.",
+    "proposals": "Preservação da Bacia Hidrográfica e saneamento básico universal."
+  },
+  {
+    "id": "c7",
+    "name": "Gabriela Paz",
+    "position": "Deputado Federal",
+    "number": "3333",
+    "party": "PFA - Partido do Futuro Acadêmico",
+    "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&auto=format&fit=crop&q=80",
+    "bio": "Ativista de direitos humanos e educadora comunitária.",
+    "proposals": "Aumento de recursos para a educação básica e apoio a startups educacionais."
+  },
+  {
+    "id": "c8",
+    "name": "Helio Costa",
+    "position": "Deputado Federal",
+    "number": "2222",
+    "party": "PNB - Partido Nacional Brasileiro",
+    "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&auto=format&fit=crop&q=80",
+    "bio": "Produtor rural e defensor do agronegócio sustentável.",
+    "proposals": "Crédito facilitado para pequeno e médio produtor rural."
+  },
+  {
+    "id": "c9",
+    "name": "Iara Santos",
+    "position": "Deputado Federal",
+    "number": "1111",
+    "party": "PVC - Partido Verde Ciudadão",
+    "photo": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=300&auto=format&fit=crop&q=80",
+    "bio": "Médica sanitarista e professora de medicina.",
+    "proposals": "Fortalecimento do SUS e incentivo ao desenvolvimento de vacinas no país."
+  },
+  {
+    "id": "c10",
+    "name": "Jorge Valente",
+    "position": "Deputado Estadual",
+    "number": "99888",
+    "party": "PFA - Partido do Futuro Acadêmico",
+    "photo": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=300&auto=format&fit=crop&q=80",
+    "bio": "Líder comunitário e gestor cultural.",
+    "proposals": "Criação de centros culturais regionais e bolsas de incentivo ao esporte."
+  },
+  {
+    "id": "c11",
+    "name": "Karina Alves",
+    "position": "Deputado Estadual",
+    "number": "88777",
+    "party": "PSD - Partido Social Digital",
+    "photo": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&auto=format&fit=crop&q=80",
+    "bio": "Desenvolvedora de software e palestrante de inovação.",
+    "proposals": "Cursos de programação gratuitos para jovens de escolas públicas."
+  },
+  {
+    "id": "c12",
+    "name": "Lucas Prado",
+    "position": "Deputado Estadual",
+    "number": "77666",
+    "party": "PNB - Partido Nacional Brasileiro",
+    "photo": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=300&auto=format&fit=crop&q=80",
+    "bio": "Administrador de empresas e consultor financeiro.",
+    "proposals": "Desburocratização para abertura de microempresas locais."
+  },
+  {
+    "id": "c13",
+    "name": "Marina Rocha",
+    "position": "Deputado Estadual",
+    "number": "66555",
+    "party": "PVC - Partido Verde Ciudadão",
+    "photo": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300&auto=format&fit=crop&q=80",
+    "bio": "Bióloga e pesquisadora de preservação de parques urbanos.",
+    "proposals": "Plantação de árvores em vias urbanas e criação de feiras orgânicas."
+  },
+  {
+    "id": "c14",
+    "name": "Natan Oliveira",
+    "position": "Presidente",
+    "number": "55",
+    "party": "PSD - Partido Social Digital",
+    "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&auto=format&fit=crop&q=80",
+    "bio": "Cientista político e especialista em governança digital.",
+    "proposals": "Governo digital transparente e investimento em inteligência artificial ética."
+  },
+  {
+    "id": "c15",
+    "name": "Olívia Martins",
+    "position": "Governador",
+    "number": "44",
+    "party": "PFA - Partido do Futuro Acadêmico",
+    "photo": "https://images.unsplash.com/photo-1554151228-14d9def656e4?w=300&auto=format&fit=crop&q=80",
+    "bio": "Arquiteta urbanista e especialista em mobilidade.",
+    "proposals": "Ciclovias intermunicipais e revitalização dos centros urbanos históricos."
+  }
+]

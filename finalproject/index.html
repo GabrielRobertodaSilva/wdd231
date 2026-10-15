@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoteSmart Brazil — Digital Voting Helper (Colinha Eleitoral 2026)</title>
+  <meta name="description" content="Organize your candidates for the 2026 elections with the VoteSmart Brazil Digital Election Cheat Sheet.">
+  <meta name="author" content="Gabriel Roberto da Silva">
+  <meta property="og:title" content="VoteSmart Brazil — Colinha Eleitoral">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <h1>VoteSmart Brazil</h1>
+    </div>
+    <button id="hamburgerBtn" class="hamburger" aria-label="Abrir menu">&#9776;</button>
+    <nav id="navMenu" class="nav-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="candidates.html">Candidates</a>
+      <a href="guide.html">Voting Guide</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Your Digital Election Cheat Sheet for 2026</h2>
+      <p>Research, choose, and save your candidates quickly and conveniently for election day.</p>
+      <a href="candidates.html" class="cta-btn">Create My Cheat Sheet</a>
+    </section>
+
+    <section class="colinha-section">
+      <h2>Your Saved Colinha</h2>
+      <div id="colinhaList" class="colinha-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 VoteSmart Brazil — Gabriel Roberto da Silva | WDD 231 Final Project</p>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
