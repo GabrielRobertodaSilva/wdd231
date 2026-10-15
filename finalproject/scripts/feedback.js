@@ -1,4 +1,4 @@
-import { create } from 'zustand'
+import { create } from 'https://esm.sh/zustand';
 
 document.addEventListener('DOMContentLoaded', () => {
   const resultsContainer = document.querySelector('#formDataResults');

@@ -1,5 +1,5 @@
 const STORAGE_KEY = 'votesmart_colinha';
-import { create } from 'zustand'
+import { create } from 'https://esm.sh/zustand';
 
 export function getColinha() {
   const data = localStorage.getItem(STORAGE_KEY);

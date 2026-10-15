@@ -1,5 +1,5 @@
 import { saveToColinha, removeFromColinha, getColinha } from './storage.js';
-import { create } from 'zustand'
+import { create } from 'https://esm.sh/zustand';
 
 export async function fetchCandidates() {
   try {

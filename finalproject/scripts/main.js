@@ -1,5 +1,5 @@
 import { getColinha, saveToColinha, removeFromColinha } from './storage.js';
-import { create } from 'zustand'
+import { create } from 'https://esm.sh/zustand';
 
 document.addEventListener('DOMContentLoaded', () => {
   
